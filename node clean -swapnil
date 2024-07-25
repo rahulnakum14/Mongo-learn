@@ -1,0 +1,14 @@
+lib (Library):
+
+Contains the core logic and functionality of your application.
+In your case, it includes the ParkingLot class, which manages the parking slots and cars.
+services:
+
+Acts as an intermediary between the controllers and the core logic.
+Handles business logic, validation, and interacts with the core functionality defined in lib.
+Ensures that the controllers remain thin, focusing only on handling HTTP requests and responses.
+controllers:
+
+Handles HTTP requests and responses.
+Uses services to perform the necessary actions.
+Routes the request to the appropriate service method based on the endpoint.
